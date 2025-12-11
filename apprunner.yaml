@@ -4,6 +4,7 @@ build:
   commands:
     build:
       - pip install -r requirements.txt
+      - pip install gunicorn
 run: 
   command: gunicorn --config gunicorn.conf.py gettingstarted.wsgi
   network: 
