@@ -6,6 +6,6 @@ build:
       - pip install -r requirements.txt
       - pip install gunicorn
 run: 
-  command: gunicorn --config gunicorn.conf.py gettingstarted.wsgi
+  command: gunicorn gettingstarted.wsgi
   network: 
     port: 80
