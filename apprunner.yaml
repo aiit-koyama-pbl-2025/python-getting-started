@@ -3,7 +3,7 @@ runtime: python3
 build:
   env:
     - name: DATABASE_URL
-      value: "postgresql://postgres:h<XujEbv05fYaux*)u0|0MXI!)9~@database-2.cluster-c76q8cuqewgx.ap-northeast-1.rds.amazonaws.com"
+      value: "postgresql://postgres:h%3CXujEbv05fYaux%2A%29u0%7C0MXI%21%299~@database-2.cluster-c76q8cuqewgx.ap-northeast-1.rds.amazonaws.com"
     - name: ALLOWED_HOSTS
       value: "at2qtped2p.ap-northeast-1.awsapprunner.com"
     - name: DJANGO_DEBUG
