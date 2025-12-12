@@ -6,8 +6,9 @@ build:
       - pip install -r requirements.txt
       - pip install gunicorn
 run:
+  pre-run:  
+    - python manage.py migrate
   command:
-      - python manage.py migrate
       - gunicorn gettingstarted.wsgi
   network: 
     port: 80
