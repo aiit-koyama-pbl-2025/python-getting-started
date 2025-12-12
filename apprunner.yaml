@@ -4,6 +4,12 @@ build:
   env:
     - name: DATABASE_URL
       value: "postgresql://postgres:h<XujEbv05fYaux*)u0|0MXI!)9~@database-2.cluster-c76q8cuqewgx.ap-northeast-1.rds.amazonaws.com"
+    - name: DJANGO_ALLOWED_HOSTS
+      value: "at2qtped2p.ap-northeast-1.awsapprunner.com"
+    - name: DJANGO_DEBUG
+      value: "False"
+    - name: DJANGO_SECRET_KEY
+      value: "django-insecure-!k1v#(z8q3&8v1o@3t0e5g$y7xj9u8r4m@l2p3n4o5p6q7r8s9t0u1v2w3x4y5z6"
   commands:
     build:
       - pip install -r requirements.txt
