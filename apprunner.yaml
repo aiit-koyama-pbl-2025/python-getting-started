@@ -8,7 +8,6 @@ build:
 run:
   pre-run:  
     - python manage.py migrate
-  command:
-      - gunicorn gettingstarted.wsgi
+  command:gunicorn gettingstarted.wsgi
   network: 
     port: 80
